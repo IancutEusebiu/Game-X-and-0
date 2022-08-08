@@ -1,0 +1,89 @@
+body{
+  background-color: #1b0836;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233d1978' fill-opacity='1' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");    
+}
+
+
+
+h1{
+    text-align: center;
+    color: #efefef;
+  
+    border: solid;
+    
+}
+button{
+    display:block;
+    min-width:100px;
+    margin:0 auto;
+    background-color:rgb(15, 88, 2);
+}
+
+.container{
+    width:210px;
+    height:20vh;
+    margin:5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .container div{
+    border: 2px solid rgb(244, 244, 244);
+    width:70px;
+    height:70px;
+    cursor: pointer;
+    color: #efefef;
+  }
+  .container div:hover{
+    background-color: #687175;
+  }
+
+  .popup{
+    width: 400px;
+    height: 300px;
+    background-color:#efefef ;
+    border-radius: 6px;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    visibility: hidden;
+   
+    
+  }
+
+  .open-popup{
+    visibility: visible;
+    animation-name: animate-blur;
+    animation-timing-function: ease;
+  }
+
+  @keyframes animate-blur {
+    0% {
+      opacity: 0;
+      filter: blur(15px);
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+  }
+  
+
+
+  .popup button{
+    background-color: rgb(235, 33, 33);
+   
+  }
+
+  .img img{
+    width: 200px;
+    height: 130px;
+    
+  }
